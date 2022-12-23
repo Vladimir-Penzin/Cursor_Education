@@ -361,6 +361,6 @@ h1 {
    border-radius: 4px;
 }
 
-.box02_top-block .box02_bottom-block .box03_left-block .box03_right-block .box04_left-block .box04_right-block {
+.box02_top-block, .box02_bottom-block, .box03_left-block, .box03_right-block, .box04_left-block, .box04_right-block {
    box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
 }
