@@ -1,0 +1,5 @@
+1. Used font "Inter" except of font "SF Pro Text Medium"
+2. Used font "Roboto" except of font "Avenir LT Std 55 Roman"
+3. Font "Gilroy Heavy" loaded from folder "fonts"
+4. Other fonts loaded through the link from Google Fonts
+5. Used a few styles for tad <a> directly in html file to avoid unnecessary decoration
