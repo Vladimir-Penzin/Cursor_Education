@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Lato-Semibold";
+    src: url(../fonts/Lato-Semibold.ttf);
+}
+
+body {
+    font-family: Lato;
+    background-color: #E5E5E5;
+}
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+}
+.header {
+    background-color: #ED4C5C;
+    color: white;
+    position: relative;
+    height: 500px;
+}
+.header-block {
+    position: absolute;
+    width: 30%;
+    top: 122px;
+    left: 165px;
+}
+.header-block_title {
+    font-family: Lato-Semibold;
+    font-size: 36px;
+    line-height: 43.2px;
+    margin-bottom: 24px;
+}
+.header-block_text {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.header-block_links {
+    width: 35%;
+    height: 35px;  
+}
+.playmarket {
+    margin-right: 23px;
+}
+.appstore {
+    margin-right: 23px;
+}
+.windows {
+    position: relative;
+    bottom: 4px;
+}
+.header-image {
+    width: 37%;
+    position: absolute;
+    top: 94px;
+    left: 691px;
+}
+.main {
+    position: relative;
+    background-color: white;
+    height: 500px;
+}
+.main_block-left {
+    position: absolute;
+    width: 30%;
+    left: 176px;
+    top: 117px;
+}
+.main_block-left_title {
+    font-family: Lato-Semibold;
+    font-size: 36px;
+    line-height: 43.2px;
+}
+.main_block-left_text {
+    position: absolute;
+    width: 100%;
+    top: 96px;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 19.6px;
+    text-align: justify;
+}
+.main_block-input {
+    position: absolute;
+    width: 37.5%;
+    top: 117px;
+    right: 165px;
+}
+.f-name,.l-name, .phone, .select {
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 21px 20px 20px 31px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.2px;
+    color: #132743b4;
+}
+.f-name, .l-name{
+    width: 47.2%;
+}
+.f-name{
+    margin-right: 26px;
+}
+.phone, .select {
+    width: 100%;
+}
+.f-name, .phone, .select{
+    margin-bottom: 24px;
+}
+.chevron_down {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 26px;
+    bottom: 96px;
+}
+.button-submit {
+    width: 29.6%;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #ED4C5C;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer {
+    position: relative;
+    color: #101010;
+    background-color: #FAFAFA;
+    height: 435px; 
+}
+.footer-top {
+    position: absolute;
+}
+.footer-column {
+    top: 85px;  
+}
+.column-1{
+    position: absolute;
+    left: 161px;
+    width: 259px;
+}
+.column-2 {
+    position: absolute;
+    left: 450px;
+    width: 254px;
+}
+.column-3 {
+    position: absolute;
+    left: 734px;
+}
+.column-4 {
+    position: absolute;
+    left: 1022px;
+}
+.footer-column_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-bottom: 30px;  
+}
+.menu-address {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+.menu-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.2px;
+}
+.menu-item_link {
+    text-transform: capitalize;
+}
+.item_info {
+    margin-top: 33px;
+    margin-bottom: 11px;
+}
+.item_phone {
+    margin-bottom: 20px;
+}
+.menu-item_img-social {
+    margin-right: 12px;
+}
+.menu-item_cards {
+    margin-top: 33px;
+    margin-left: 6px;
+}
+.footer-bottom {
+    position: absolute;
+    left: 161px;
+    bottom: 86px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+}
+
