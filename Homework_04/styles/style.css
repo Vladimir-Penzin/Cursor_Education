@@ -50,8 +50,12 @@ body {
     margin-right: 23px;
 }
 .windows {
-    position: relative;
-    bottom: 4px;
+    width: 32px;
+    height: 32px;
+}
+.playmarket:hover, .appstore:hover, .windows:hover{
+   cursor: pointer;
+   box-shadow: 0 0 6px 2px rgb(248, 172, 172);
 }
 .header-image {
     width: 37%;
@@ -90,6 +94,9 @@ body {
     width: 37.5%;
     top: 117px;
     right: 165px;
+}
+input:hover {
+    box-shadow: 0 0 5px 2px rgb(219, 217, 217);
 }
 .f-name,.l-name, .phone, .select {
     height: 60px;
@@ -131,6 +138,11 @@ body {
     font-size: 14px;
     line-height: 17px;
 }
+.button-submit:hover{
+    box-shadow: 0 0 5px 3px rgb(219, 188, 188);
+    cursor: pointer;
+}
+
 .footer {
     position: relative;
     color: #101010;
@@ -143,7 +155,7 @@ body {
 .footer-column {
     top: 85px;  
 }
-.column-1{
+.column-1 {
     position: absolute;
     left: 161px;
     width: 259px;
@@ -152,6 +164,10 @@ body {
     position: absolute;
     left: 450px;
     width: 254px;
+}
+.column-2>div:hover{
+    cursor: pointer;
+    text-shadow: 0 0 3px rgb(197, 195, 195);
 }
 .column-3 {
     position: absolute;
@@ -180,6 +196,9 @@ body {
 .menu-item_link {
     text-transform: capitalize;
 }
+.menu-item_link:hover{
+    text-decoration: underline;
+}
 .item_info {
     margin-top: 33px;
     margin-bottom: 11px;
@@ -189,6 +208,14 @@ body {
 }
 .menu-item_img-social {
     margin-right: 12px;
+}
+.menu-item_img-social:hover{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    transform: translateX(-2px) translateY(-4px);
+    vertical-align: middle;
 }
 .menu-item_cards {
     margin-top: 33px;
