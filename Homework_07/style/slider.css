@@ -1,28 +1,14 @@
-.slick-list{
+.slick-list {
     overflow: hidden;
 }
-.slick-track{
+.slick-track {
     display: flex;
 }
 
-/*.slick-slide{}
-.slick-slide.slick-active{}
-.slick-slide.slick-current{}
-.slick-slide.slick-center{}
-
-.slick-arrow{}
-.slick-arrow.slick-prev{}
-.slick-arrow.slick-next{}
-.slick-arrow.slick-disabled{}
-
-.slick-dots{}
-.slick-dots li{}
-.slick-dots button{}*/
-
-.slider{
+.slider {
     position: relative;
 }
-.slider .slick-arrow{
+.slider .slick-arrow {
     position: absolute;
     top: calc(100% + 58px);
     right: 0;
@@ -30,13 +16,13 @@
     font-size: 0; 
 }
 
-.slider .slick-arrow.slick-prev{
+.slider .slick-arrow.slick-prev {
     background: url(../icons/arrow-left-short.png) 0 0 no-repeat;
     width: 44px;
     height: 18px;
     right: 60px;
 }
-.slider .slick-arrow.slick-next{
+.slider .slick-arrow.slick-next {
     background: url(../icons/arrow-right-short.png) 0 0 no-repeat;
     width: 24px;
     height: 18px;
@@ -64,7 +50,7 @@
     height: 18px; 
 }
 
-.slider .slick-dots{
+.slider .slick-dots {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -72,10 +58,10 @@
     top: calc(100% + 58px);
     left: 0;
 }
-.slider .slick-dots li{
+.slider .slick-dots li {
     margin: 0 5px;
 }
-.slider .slick-dots button{
+.slider .slick-dots button {
     font-size: 0;
     width: 5px;
     height: 5px;
