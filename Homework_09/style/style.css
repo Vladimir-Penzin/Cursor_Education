@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    max-width: 240px;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.gray{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: gray;
+}
+.gray:nth-last-child(1),.gray:nth-last-child(2),.gray:nth-last-child(3),.gray:nth-last-child(4){
+    background-color: blue;
+}
+
+.gray:nth-child(4n - 1){
+    background-color: red;
+}
+
+.button {
+    margin: 100px auto;
+    width: 500px;
+    height: 92px;
+    border-radius: 100px;
+    background-color: #44D3A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text {
+    color: white;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.button::before {
+    position: absolute;
+    left: -246px;
+    top: calc(100%/2 - 6px);
+    content: " ";
+    width: 200px;
+    height: 12px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+}
+.button::after {
+    position: absolute;
+    right: -246px;
+    top: calc(100%/2 - 6px);
+    content: " ";
+    width: 200px;
+    height: 12px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+}
