@@ -457,6 +457,10 @@ body {
 }
 .contacts_block_text {
    text-align: center;
+   font-family: Mulish;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 30px;
 }
 .section_03_map_contacts_block_item:hover {
    cursor: pointer;
