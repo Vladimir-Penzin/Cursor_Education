@@ -1,0 +1,142 @@
+:root {
+   --phone_width1: 257px;
+   
+   --phone_height1: calc(374.41 / 185.09 * var(--phone_width1));
+   --phone_margin_bottom1: calc(16.72 / 185.09 * var(--phone_width1));
+   --phone_margin_right1: calc(53 / 185.09 * var(--phone_width1));
+   --phone_margin_left1: calc(224.86 / 185.09 * var(--phone_width1));
+
+   --phone_body_paddings1: calc(((185.09 - 162.37) / 2) / 185.09 * var(--phone_width1));
+   --phone_body_border_radius1: calc(15.1774 / 162.37 * var(--phone_width1));
+
+   --phone_body_glass_width1: calc(162.73 / 185.09 * var(--phone_width1));
+   --phone_body_glass_height1: calc(349.24 / 185.09 * var(--phone_width1));
+   --phone_body_glass_border_radius1: calc(15.1774 / 185.09 * var(--phone_width1));
+
+   --phone_body_mic_camera_width1: calc(49.6 / 185.08 * var(--phone_width1));
+   --phone_body_mic_camera_height1: calc(6.55 / 185.08 * var(--phone_width1));
+   --phone_body_mic_camera_margin_top1: calc(11.71 / 185.08 * var(--phone_width1));
+   --phone_body_mic_camera_margin_left1: calc(49.04 / 185.08 * var(--phone_width1));
+   --phone_body_mic_camera_margin_bottom1: calc(13.56 / 185.08 * var(--phone_width1));
+
+   --phone_body_camera_diameter1: calc(5.36 / 185.08 * var(--phone_width1));
+   --phone_body_mic_width1: calc(33.95 / 185.08 * var(--phone_width1));
+   --phone_body_mic_width1: calc(33.95 / 185.08 * var(--phone_width1));
+   --phone_body_mic_border_radius1: calc(3.12476 / 185.08 * var(--phone_width1));
+
+   --phone_body_screen_height1: calc(288.7 / 185.08 * var(--phone_width1));
+
+   --phone_body_home_button_width1: calc(53.72 / 185.08 * var(--phone_width1));
+   --phone_body_home_button_height1: calc(17.85 / 185.08 * var(--phone_width1));
+   --phone_body_home_button_border_radius1: calc(8.93 / 185.08 * var(--phone_width1));
+   --phone_body_home_button_margin_top1: calc(6.97 / 185.08 * var(--phone_width1));
+   --phone_body_home_button_margin_bottom1: calc(3.9 / 185.08 * var(--phone_width1));
+   --phone_body_home_button_margin-left1: calc(54.88 / 185.08 * var(--phone_width1));
+
+   --phone_power_button_width1: calc(2.05 / 185.08 * var(--phone_width1));
+   --phone_power_button_height1: calc(24.51 / 185.08 * var(--phone_width1));
+   --phone_power_button_top1: calc(95.39 / 185.08 * var(--phone_width1));
+
+   --phone_volume_button_width1: calc(2.05 / 185.08 * var(--phone_width1));
+   --phone_volume_button_height1: calc(59.92 / 185.08 * var(--phone_width1));
+   --phone_volume_button_top1: calc(127.34 / 185.08 * var(--phone_width1));
+   
+
+
+} 
+
+.phone1 {
+   margin-bottom: var(--phone_margin_bottom1);
+
+   
+}
+.phone_body1 {
+   position: relative;
+   box-sizing: border-box;
+   width: var(--phone_width1);
+   height: var(--phone_height1);
+   border-radius: var(--phone_body_border_radius1);
+   
+   padding: var(--phone_body_paddings1);
+   background-color: #E3E8ED;
+   box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5), inset 4.89814px -2.44907px 8.57175px #C6CFDA, inset -6.73495px -19.5926px 24.4907px #FFFFFF;
+}
+
+.body_glass1 {
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #E3E8ED;
+   width: var(--phone_body_glass_width1);
+   height: var(--phone_body_glass_height1);
+   border-radius: var(--phone_body_glass_border_radius1);
+   box-shadow: 0px 0px 8.4815px #E4E8ED;
+}
+.body_screen1 {
+   overflow: hidden;
+   box-sizing: border-box;
+   width: 100%;
+   height: var(--phone_body_screen_height1);
+}
+.phone_screen_image1 {
+   width: 100%;
+   height: var(--phone_body_screen_height1);
+   
+}
+.mic_camera1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: var(--phone_body_mic_camera_width1);
+   height: var(--phone_body_mic_camera_height1);
+   margin-top: var(--phone_body_mic_camera_margin_top1);
+   margin-left: var(--phone_body_mic_camera_margin_left1);
+   margin-bottom: var(--phone_body_mic_camera_margin_bottom1);
+}
+
+.camera1 {
+   width: var(--phone_body_camera_diameter1);
+   height: var(--phone_body_camera_diameter1);
+   border-radius: 50%;
+   background: #CDD5DD;
+   box-shadow: inset 0px 0.446395px 0.446395px rgba(0, 0, 0, 0.5), inset 0px -0.446395px 0.446395px #FFFFFF;
+
+}
+.mic1 {
+   width: var(--phone_body_mic_width1);
+   height: 100%;
+   background: #CDD5DD;
+   box-shadow: inset 0px 0.446395px 0.223197px rgba(0, 0, 0, 0.381058), inset 0px -0.446395px 0.446395px #FFFFFF;
+   border-radius: 3.12476px;
+}
+.home_button1 {
+   width: var(--phone_body_home_button_width1);
+   height: var(--phone_body_home_button_height1);
+   border-radius: var(--phone_body_home_button_border_radius1);
+   background: #E3E8ED;
+   box-shadow: inset 0px 0.446395px 0.446395px #FFFFFF, inset 0px -0.446395px 0.446395px #C9D1DB;
+   margin-top: var(--phone_body_home_button_margin_top1);
+   margin-bottom: var(--phone_body_home_button_margin_bottom1);
+   margin-left: var(--phone_body_home_button_margin-left1);
+}
+.phone_power_button1 {
+   width: var(--phone_power_button_width1);
+   height: var(--phone_power_button_height1);
+   background: #E3E7EC;
+   box-shadow: inset 0px 0px 4.01755px #E3E8ED;
+   border-radius: 1.33918px 0px 0px 1.33918px;
+   position: absolute;
+   top: var(--phone_power_button_top1);
+   left: calc((-1) * var(--phone_power_button_width1));
+}
+.phone_volume_button1 {
+   width: var(--phone_volume_button_width1);
+   height: var(--phone_volume_button_height1);
+   background: #E3E7EC;
+   box-shadow: inset 0px 0px 8.4815px #E3E8ED;
+   border-radius: 1.33918px 0px 0px 1.33918px;
+   position: absolute;
+   top: var(--phone_volume_button_top1);
+   left: calc((-1) * var(--phone_volume_button_width1));
+}
