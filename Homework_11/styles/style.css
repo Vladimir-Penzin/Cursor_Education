@@ -1,0 +1,344 @@
+@font-face {
+    font-family: StarWars;
+    src: url(../fonts/Starjedi.ttf)
+}
+
+body {
+    box-sizing: border-box;
+}
+.jedi_swords {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.jedi_img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+.sparkles{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 209px;
+    box-shadow: 0 0 15px 15px white;
+    visibility: hidden;
+    animation: sparkles_visibility 10s ease-in infinite normal 0s forwards;
+    animation-play-state: paused;
+}
+@keyframes sparkles_visibility {
+    0%, 60% {
+        visibility: hidden;
+    }
+    61% {
+        visibility: visible;
+    }
+    62%, 100% {
+        visibility: hidden;
+    }
+}
+.sword {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+.green_sword {
+    position: absolute;
+    top: 30%;
+    transform: rotate(-90deg);
+    left: 150px;
+    animation: green_sword_blade_move 10s ease-in infinite normal 0s forwards;
+    animation-play-state: paused;
+}
+.sword_arm {
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+}
+.sword_arm img {
+    width: 100%;
+    height: 100%;
+}
+.sword_blade {
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 92px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.green_sword .sword_blade{
+    box-shadow: 0 0 5px #03f4ac, 0 0 25px #03f4ac, 0 0 50px #03f4ac, 0 0 100px #03f4ac;
+    animation: green_sword_blade_visibility 10s ease-in infinite normal 0s forwards;
+    animation-play-state: paused;
+}
+@keyframes green_sword_blade_visibility {
+    0% {
+        width: 0px;
+    }
+    10% {
+        width: 200px;
+    }
+
+    80% {
+        width: 200px;
+    }
+    90%, 100% {
+        width: 0px;
+    }
+}
+@keyframes green_sword_blade_move {
+    10% {
+        top: 30%;
+        transform: rotate(-90deg);
+        left: 150px;
+    }
+    20% {
+        top: 20px;
+        transform: rotate(0deg);
+        left: 150px;
+    }
+    90% {
+        top: 20px;
+        transform: rotate(0deg);
+        left: 150px;
+    }
+    
+    100%{
+        top: 30%;
+        transform: rotate(-90deg);
+        left: 150px;
+    }
+}
+.red_sword {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+    left: 0px;
+    animation: red_sword_move 10s ease-in infinite normal 0s forwards;
+    animation-play-state: paused;
+}
+.red_sword .sword_blade{
+    box-shadow: 0 0 5px #f4036f, 0 0 25px #f4036f, 0 0 50px #f4036f, 0 0 100px #f4036f;
+    animation: red_sword_blade_visibility 10s ease-in infinite normal 0s forwards;
+    animation-play-state: paused;
+}
+@keyframes red_sword_blade_visibility {
+    0% , 30% {
+        width: 0px;
+    }
+    40%,70% {
+        width: 200px;
+    }
+    80%, 100% {
+        width: 0px;
+    }
+}
+@keyframes red_sword_move {
+    0% , 20% {
+        top: 400px;
+        transform: rotate(0deg);
+        left: 150px;
+    }
+    30%, 40% {
+        top: 250px;
+        transform: rotate(-90deg);
+        left: 0px;
+    }
+    50% {
+        top: 250px;
+        transform: rotate(-105deg);
+        left: -50px;
+    }
+    60% {
+        top: 250px;
+        transform: rotate(-45deg);
+        left: 100px;
+    }
+    70%, 80% {
+        top: 250px;
+        transform: rotate(-90deg);
+        left: 0px;
+    }
+    90% {
+        top: 400px;
+        transform: rotate(0deg);
+        left: 150px;
+    }
+    100% {
+        top: 400px;
+        transform: rotate(0deg);
+        left: 150px;
+    }
+}
+.blue_sword {
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    right: 50px;
+    animation: blue_sword_move 10s ease-in infinite normal 0s forwards;
+    animation-play-state: paused;
+}
+.blue_sword .sword_blade{
+    box-shadow: 0 0 5px #0398f4, 0 0 25px #0398f4, 0 0 50px #0398f4, 0 0 100px #0398f4;
+    animation: blue_sword_blade_visibility 10s ease-in infinite normal 0s forwards;
+    animation-play-state: paused;
+}
+@keyframes blue_sword_blade_visibility {
+    0% , 30% {
+        width: 0px;
+    }
+    40%, 70% {
+        width: 200px;
+    }
+    80%, 100% {
+        width: 0px;
+    }
+}
+@keyframes blue_sword_move {
+    0% , 20% {
+        top: 400px;
+        transform: rotate(-180deg);
+        right: 150px;
+    }
+    30%, 40% {
+        top: 250px;
+        transform: rotate(-90deg);
+        right: 0px;
+    }
+    50% {
+        top: 250px;
+        transform: rotate(-75deg);
+        right: -50px;
+    }
+    60% {
+        top: 250px;
+        transform: rotate(-135deg);
+        right: 100px;
+    }
+    70%, 80% {
+        top: 250px;
+        transform: rotate(-90deg);
+        right: 0px;
+    }
+    90% {
+        top: 400px;
+        transform: rotate(-180deg);
+        right: 150px;
+    }
+    100% {
+        top: 400px;
+        transform: rotate(-180deg);
+        right: 150px;
+    }
+}
+.jedi_swords:hover .green_sword {
+    animation-play-state: running;
+}
+.jedi_swords:hover .green_sword .sword_blade {
+    animation-play-state: running;
+}
+.jedi_swords:hover .red_sword {
+    animation-play-state: running;
+}
+.jedi_swords:hover .red_sword .sword_blade {
+    animation-play-state: running;
+}
+.jedi_swords:hover .blue_sword {
+    animation-play-state: running;
+}
+.jedi_swords:hover .blue_sword .sword_blade {
+    animation-play-state: running;
+}
+.jedi_swords:hover .sparkles{
+    animation-play-state: running;
+}
+
+.jedi_text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: StarWars;
+    font-weight: 500;
+    font-size: 24px;
+    color: black;
+    text-shadow: 0 0 3px yellow;
+}
+
+
+.newtons_pendulum {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(207, 207, 207);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circles {
+    display: flex;
+}
+.circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform-origin: 50% -100px;
+    background-color: #fff;
+    background: radial-gradient(circle at 50% 15%, rgb(81, 255, 255), rgb(42, 42, 185));
+    box-shadow: 0 1px 2px 1px rgb(122, 122, 122);
+}
+@keyframes start_swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes end_swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.first_circle {
+    animation: start_swing 1.5s linear infinite normal 0s forwards;
+}
+.last_circle {
+    animation: end_swing 1.5s linear infinite normal 0s forwards;
+}
