@@ -1,0 +1,14 @@
+@use 'right-block-styles.scss';
+
+.big-sizes__sizes-block {
+    display: flex;
+}
+.sizes__big {
+    box-sizing: border-box;
+    width: 106px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}

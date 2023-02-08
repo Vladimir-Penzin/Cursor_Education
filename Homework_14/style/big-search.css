@@ -1,0 +1,9 @@
+.big-search__container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #00D200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=big-search.css.map */

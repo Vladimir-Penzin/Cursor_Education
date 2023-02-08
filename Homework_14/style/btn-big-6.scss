@@ -1,0 +1,109 @@
+@font-face {
+   font-family: Inter;
+   src: url(../fonts/Inter-Medium.ttf);
+}
+
+$blue-color: #18A0FB ;
+$light-gray: rgba(224, 224, 224, 0.3);
+$light-gray-c: rgba(224, 224, 224);
+$gray: #878787;
+$black: #2C2C2C;
+$red: #FF3E1D;
+$green: #00D200;
+$fz-big: 15px;
+$lh-big: 18px;
+$fz-small: 13px;
+$lh-small: 16px;
+$size: non !default;
+$icon: big !default;
+$bc-color: c-blue !default;
+$color: c-white !default;
+
+@mixin btn ($size, $icon, $bc-color, $color) {
+   .btn_#{$size}_#{$icon}_#{$bc-color}_#{$color} {
+       box-sizing: border-box;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       flex-direction: row;
+       align-items: center;
+       font-family: Inter;
+       border-radius: 5px;
+       @if $size == big {
+           font-size: $fz-big;
+           line-height: $lh-big;
+           max-width: 144px;
+           @if $icon == non {
+               padding: 14px 36px;
+           } @else if $icon == left {
+               padding: 12px 20px;
+               gap: 10px;
+           } @else if $icon == right {
+               padding: 12px 20px;
+               gap: 10px;
+               flex-direction: row-reverse;
+           }
+       } @if $size == small {
+           font-size: $fz-small;
+           line-height: $lh-small;
+           max-width: 111px;
+           @if $icon == non {
+               padding: 10px 24px;
+               max-width: 116px;
+           } @else if $icon == left {
+               padding: 8px 12px;
+               gap: 9px;
+           } @else if $icon == right {
+               padding: 8px 12px;
+               gap: 9px;
+               flex-direction: row-reverse;
+           }
+       } @if $bc-color == c-blue {
+           background-color: $blue-color;
+       } @else if $bc-color == c-light-gray {
+           background-color: $light-gray;
+       } @else if $bc-color == c-white {
+           background-color: #fff;
+       } @else if $bc-color == c-red {
+           background-color: $red;
+       }
+       @if $color == c-white {
+           color:white;
+           svg {
+               path {
+                  stroke: white;
+               }
+           }
+       } @else if $color == c-gray {
+           color: $gray;
+           svg {
+               path {
+                  stroke: $gray;
+               }
+           }
+       } @else if $color == c-black {
+           color: $black;
+           border: 1px solid $light-gray-c;
+           svg {
+               path{
+                  stroke: $black;
+               }
+           }
+       } @else if $color == c-blue {
+           color: $blue-color;
+           border: 1px solid $blue-color;
+           svg {
+               path {
+                  stroke: $blue-color;
+               }
+           }
+       }
+   }
+
+}
+
+/*size = "big" or "small"
+icon = "left", "right" or "non"
+color = c-blue, c-white, c-light-gray, c-light-gray-c , c-gray, c-green, c-red, c-black*/
+
+@include btn(big, right, c-light-gray, c-gray);

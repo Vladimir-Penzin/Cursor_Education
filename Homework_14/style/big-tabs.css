@@ -1,0 +1,42 @@
+.block__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rest-item {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.first-item {
+  background-color: #18A0FB;
+  border-radius: 5px 0px 0px 5px;
+  border-top: 1px solid #18A0FB;
+  border-bottom: 1px solid #18A0FB;
+  border-left: 1px solid #18A0FB;
+  border-right: none;
+  color: white;
+}
+
+.last-item {
+  border: 1px solid #E0E0E0;
+  border-radius: 0px 5px 5px 0px;
+  color: #2C2C2C;
+}
+
+.big-tabs__tabs-block {
+  display: flex;
+}
+
+.tab__big {
+  box-sizing: border-box;
+  width: 134px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}/*# sourceMappingURL=big-tabs.css.map */

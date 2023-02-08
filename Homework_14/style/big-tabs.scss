@@ -1,0 +1,15 @@
+@use 'right-block-styles.scss';
+
+.big-tabs__tabs-block {
+    display: flex;
+}
+.tab__big {
+    box-sizing: border-box;
+    width: 134px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+

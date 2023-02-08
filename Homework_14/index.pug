@@ -1,0 +1,67 @@
+doctype html
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title Cursor_Education_Homework_14
+      link(rel="stylesheet", href="./style/reset.css")
+      link(rel="stylesheet", href="./style/main.css")
+   body 
+      .wrapper
+         .big-buttons
+            h2.heading Buttons Big
+            .big-buttons__block
+               .big-buttons__left-block
+                  .left-block__big-row
+                     include pug/btn-big-1.pug
+                     include pug/btn-big-2.pug
+                     include pug/btn-big-3.pug
+                     include pug/btn-big-4.pug
+                  .left-block__big-row
+                     include pug/btn-big-5.pug
+                     include pug/btn-big-6.pug
+                     include pug/btn-big-7.pug
+                     include pug/btn-big-8.pug
+                  .left-block__big-row
+                     include pug/btn-big-9.pug
+                     include pug/btn-big-10.pug
+                     include pug/btn-big-11.pug
+                     include pug/btn-big-12.pug
+               .big-buttons__right-block
+                  include pug/big-icons.pug
+                  include pug/big-tabs.pug
+                  include pug/big-sizes.pug
+         .small-buttons
+            h2.heading Buttons Small
+            .small-buttons__block
+               .small-buttons__left-block
+                  .left-block__small-row
+                     include pug/btn-sm-1.pug
+                     include pug/btn-sm-2.pug
+                     include pug/btn-sm-3.pug
+                     include pug/btn-sm-4.pug
+                  .left-block__small-row
+                     include pug/btn-sm-5.pug
+                     include pug/btn-sm-6.pug
+                     include pug/btn-sm-7.pug
+                     include pug/btn-sm-8.pug
+                  .left-block__small-row
+                     include pug/btn-sm-9.pug
+                     include pug/btn-sm-10.pug
+                     include pug/btn-sm-11.pug
+                     include pug/btn-sm-12.pug
+               .small-buttons__center-block
+                  include pug/small-tabs.pug
+                  include pug/small-icons.pug
+                  include pug/small-sizes.pug
+               .small-buttons__right-block
+                  include pug/small-search.pug
+                  include pug/big-search.pug
+         .mini-tags
+            .mini-tags__column
+               include pug/mini-tag-1.pug
+               include pug/mini-tag-3.pug
+            .mini-tags__column
+               include pug/mini-tag-2.pug
+               include pug/mini-tag-4.pug

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Medium.ttf);
+}
+/*icon = "yes" or "non"
+color = c-blue, c-white, c-light-gray,c-black*/
+.mini_tag_yes_c-blue_c-white {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: Inter;
+  border-radius: 5px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  width: 65px;
+  padding: 6px 10px;
+  gap: 6px;
+  background-color: #18A0FB;
+  color: white;
+}
+.mini_tag_yes_c-blue_c-white svg path {
+  fill: #fff;
+  stroke: white;
+}
+.mini_tag_yes_c-blue_c-white :hover {
+  cursor: pointer;
+}/*# sourceMappingURL=mini-tag-2.css.map */

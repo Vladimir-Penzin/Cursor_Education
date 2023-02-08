@@ -1,0 +1,14 @@
+@use 'right-block-styles.scss';
+
+.small-tabs__tabs-block {
+    display: flex;
+}
+.tab__small {
+    box-sizing: border-box;
+    width: 86px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}

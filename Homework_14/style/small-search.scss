@@ -1,0 +1,12 @@
+$red: #FF3E1D;
+$green: #00D200;
+
+.small-search__container {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

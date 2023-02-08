@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Medium.ttf);
+}
+/*size = "big" or "small"
+icon = "left", "right" or "non"
+color = c-blue, c-white, c-light-gray, c-light-gray-c , c-gray, c-green, c-red, c-black*/
+.btn_small_left_c-red_c-white {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: Inter;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 16px;
+  max-width: 111px;
+  padding: 8px 12px;
+  gap: 9px;
+  background-color: #FF3E1D;
+  color: white;
+}
+.btn_small_left_c-red_c-white svg path {
+  stroke: white;
+}/*# sourceMappingURL=btn-sm-9.css.map */

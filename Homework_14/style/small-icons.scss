@@ -1,0 +1,10 @@
+@use 'right-block-styles.scss';
+
+.small-icons__icons-block {
+    display: flex;
+}
+.icon__small {
+    box-sizing: border-box;
+    width: 48px;
+    height: 36px;
+}

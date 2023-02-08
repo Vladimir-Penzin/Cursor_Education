@@ -1,0 +1,14 @@
+@use 'right-block-styles.scss';
+
+.small-sizes__sizes-block {
+    display: flex;
+}
+.sizes__small {
+    box-sizing: border-box;
+    width: 62px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
